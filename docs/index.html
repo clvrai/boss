@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Bootstrap Your Own Skills: Learning to Solve New Tasks with LLM Guidance.">
+  <meta name="keywords" content="Reinforcement Learning, Large Language Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Your Own Skills: Learning to Solve New Tasks with LLM Guidance</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo_clvr.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://clvrai.com/">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Related Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://clvrai.github.io/sprint/">
+              SPRINT
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Bootstrap Your Own Skills: Learning to Solve New Tasks with LLM
+              Guidance</h1>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">
+                <a href="https://jesbu1.github.io/">Jesse Zhang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://jiahui-3205.github.io/">Jiahui Zhang</a><sup>1</sup>,
+                <span class="author-block">
+                  <a href="https://kpertsch.github.io/">Karl Pertsch</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/ziyi-liu-318616186/">Ziyi Liu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://shanzhenren.github.io/">Xiang Ren</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://minsukchang.com/">Minsuk Chang</a><sup>2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://shaohua0116.github.io/">Shao-Hua Sun</a><sup>3</sup>,</span>
+                <span class="author-block">
+                  <a href="https://clvrai.com/web_lim/">Joseph J. Lim</a><sup>4</sup>
+                </span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Southern California </span>
+              <span class="author-block"><sup>2</sup>Google AI </span>
+              <span class="author-block"><sup>3</sup>National Taiwan University </span>
+              <span class="author-block"><sup>4</sup>KAIST </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            </br> -->
+              <br>
+              <span class="author-block"><b> Conference on Robot Learning 2023</b></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            </br> -->
+              <!-- <br> -->
+              <span class="author-block"><b>Oral Presentation (top 6.6%)</b></span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=a0mFRgadGO"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/openreview_icon.png"></img>
+                    </span>
+                    <span>OpenReview</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/clvrai/boss" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <br>
+<br><hr> -->
+  <section class="section">
+    <div class="container">
+      <div class="is-centered has-text-centered">
+        <video id="teaser_video" width=70% muted autoplay loop style="border-radius:10px;" margin="auto">
+          <source src="static/videos/BOSS_over_2x.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- <br><br> -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <!-- <p>
+            We present the first method capable of photorealistically reconstructing a non-rigidly
+            deforming scene using photos/videos captured casually from mobile phones.
+          </p> -->
+            <p>
+              We propose BOSS (BOotStrapping your own Skills), an approach that automatically learns to solve new
+              long-horizon, complex,
+              and meaningful tasks in new environments by growing a learned skill library with Large Language Model
+              (LLM) supervision.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      <!-- <div class="content has-text-centered">
+      <img src="./static/images/boss_overview.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image.">
+      </img>
+    </div> -->
+    </div>
+  </section>
+
+  <br>
+  <hr>
+
+  <!-- Animation. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Bootstrap Your Own Skills (BOSS) Method<br>
+          </h2>
+          <div class="content has-text-justified">
+            <p>
+              BOSS automatically learns to solve new long horizon,
+              complex tasks in new environments by guiding an agent to grow a language-specified skill library tailored
+              for the
+              target environment
+              during the <b>skill bootstrapping phase</b>.
+              After skill bootstrapping, we can simply condition the learned policy on language descriptions for new
+              tasks.</p>
+          </div>
+          <!-- Re-rendering. -->
+          <h3 class="title is-4">Method</h3>
+          <div class="content has-text-centered">
+            <img src="./static/images/boss_overview.png" class="interpolation-image"
+              alt="Interpolate start reference image.">
+            </img>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <!-- Intuitively, the richer the set of task instructions during pre-training, 
+            the more skills the policy will learn and the more downstream tasks it can finetune on efficiently. 
+            Thus, except the provided annotations from the dataset,  -->
+              Training a BOSS agent consists of two phases:
+              (1) it acquires a base repertoire of language-specified skills and (2) it practices chaining
+              these skills into long-horizon behaviors in the skill bootstrapping phase. BOSS can
+              then zero-shot execute novel natural language instructions describing complex long-horizon tasks.
+            </p>
+            <h4 class="title is-5">1. Pre-training a Language-Conditioned Skill Policy </h4>
+            <p>
+              To obtain a language-conditioned primitive skill policy, we pre-train a policy and critic with offline RL
+              on a dataset of easier to collect short-horizon, language-annotated trajectories.
+              In our experiments, we use Implicit Q-Learning (IQL) as it is performant and amenable to
+              online fine-tuning. </p>
+            <h4 class="title is-5">2. Skill Bootstrapping </h4>
+            <p>
+              We perform skill bootstrapping —
+              the agent practices by interacting with the target environment, trying new skill chains, then adding them
+              back into its skill repertoire for further bootstrapping. As a result, the agent learns increasingly
+              long-horizon skills without requiring additional supervision beyond the initial set of skills. </p>
+
+            <ol>
+              <li><b>Sampling initial skills.</b>
+                <br>
+                In every bootstrapping episode, we sample the initial skill
+                according to probabilities generated from the pre-trained value function (indicating skill success
+                probabilities). The agent then tries to
+                execute the sampled skill.
+                </br>
+              </li>
+              <li><b>Guiding Skill Chaining via LLMs.</b>
+                <br>
+                If the first skill execution succeeds, the next step is constructing
+                a longer-horizon behavior by chaining together the first skill with a sampled next skill.
+                Instead of randomly sampling subsequent skills, we propose to use large language models
+                (LLMs) to guide skill selection. We explore a bottom-up approach to learning long-horizon tasks: by
+                allowing
+                our agent to iteratively sample skill chains and practice their execution in the environment.
+                </br>
+
+
+              </li>
+              <li><b>Learning new skills.</b>
+                <br>
+                Once an episode concludes, we add the collected data back into the replay buffer and the newly learned
+                skill back into the skill library
+                for further bootstrapping.
+                We fine-tune with the same offline RL algorithm to learn both new skills and improve execution of
+                existing ones, and then repeat again from step 1.
+                </br>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <hr>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-3">Environments</h3>
+          <!-- add one pic. -->
+          <div class="content has-text-centered">
+            <img src="./static/images/env.png" class="interpolation-image" alt="Interpolate start reference image.">
+            <!-- <p>  </p> -->
+            </img>
+          </div>
+          <br>
+          We compare to unsupervised RL and zero-shot planning methods in two challenging,
+          image-based control environments: solving household tasks in the ALFRED simulator and
+          kitchen manipulation tasks with a real-world Jaco robot arm.
+          <br></br>
+          <b>(a) ALFRED:</b> The ALFRED environment is a benchmark for learning agents
+          that can follow natural language instructions to fulfill household tasks.
+          <br>
+          <b>(b) Real World Kitchen: </b>Our real world kitchen manipulation tabletop environment with continuous
+          control.
+          <br>
+
+
+          <div class="column">
+
+
+          </div>
+
+        </div>
+  </section>
+
+  <br>
+  <hr>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <!-- Re-rendering. -->
+
+
+          <br />
+          <br />
+          <br />
+          <h3 class="title is-3">Results</h3>
+          <br>
+          <h4 class="title is-4">Real World Kitchen</h4>
+          <div class="content has-text-justified">
+            <!-- <h5 class="title is-5">Offline Finetuning</h5>  -->
+            <p>
+              We perform online skill bootstrapping for 17 min of robot
+              interaction time (15k timesteps) on an unseen environment configuration.
+              Language-conditioned evaluations below. Comparison against ProgPrompt implemented with GPT-3.5.
+            </p>
+            <!-- <br> -->
+            <p>
+              <b>Comparison against ProgPrompt implemented with GPT-3.5.</b>
+            </p>
+            <br>
+            <div class="content has-text-centered">
+              <!--  2 gif images place in one row -->
+              <div class="columns is-centered">
+                <div class="column">
+                  <img src="./static/images/ppg_sink_rack.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <br />
+                  <b style="color:black;font-size:20px;"> ProgPrompt </b>
+                  <p> 2/4 Skills Completed </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/bootstrap_sink_plate5.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <br />
+                  <b style="color:black;font-size:20px;"> BOSS </b>
+                  <p> 4/4 Skills Completed</p>
+                </div>
+              </div>
+              <p style="color:black;font-size:20px;">
+                Task: "Clean the black bowl and put in the dish rack."
+              </p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="content has-text-centered">
+              <!--  2 gif images place in one row -->
+              <div class="columns is-centered">
+                <div class="column">
+                  <img src="./static/images/ppg_sink_plate.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <br />
+                  <b style="color:black;font-size:20px;"> ProgPrompt </b>
+                  <p> 4/4 Skills Completed </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/bootstrap_sink_plate9.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <br />
+                  <b style="color:black;font-size:20px;"> BOSS </b>
+                  <p> 4/4 Skills Completed</p>
+                </div>
+              </div>
+              <p style="color:black;font-size:20px;">
+                Task: "Clean the black bowl and put in the gray plate."
+              </p>
+            </div>
+          </div>
+
+          <div class="content has-text-justified">
+            <h4 class="title is-5">Quantitative Results</h4>
+            <p style="color:black;font-size:18px;">
+              We show the cumulative returns and task success rates for zero-shot bootstrapped policies vs other
+              methods. Even with SayCan policies are fine-tuned (SayCan+FT) for the same number of steps, the success
+              rate is still 0 while BOSS is the only method
+              that achieves non-zero success rates.
+            </p>
+          </div>
+          <div class="columns is-centered">
+            <img src="./static/images/real_result.png" class="interpolation-image" style="width:360px;height:145px;"
+              alt="Interpolate start reference image.">
+            </img>
+          </div>
+          <div class="the columns is-centered">
+            <b style="color:black;font-size:20px;"> <br> </b>
+          </div>
+          <!-- <p> Completes no tasks as its unsupervised skill learning objective is unable to truly learn meaningful skills. </p> -->
+
+
+
+          <br />
+          <p>
+            LLM-planning mechanisms like ProgPrompt have no standard fine-tuning procedure and
+            therefore the policy is less effective at chaining skills together even when
+            ProgPrompt breaks it down into step-by-step instructions.
+          </p>
+          <br />
+          <br />
+
+
+
+
+
+
+
+
+
+          <h4 class="title is-4">ALFRED</h4>
+          <div class="content has-text-justified">
+            <!-- <h5 class="title is-5">Zero-shot Evaluation</h5>  -->
+            <p>
+              We perform online skill bootstrapping in 40 unseen environment configurations for 500k timesteps.
+            </p>
+            <p>
+              <li><b>SayCan+P</b>: (LLM-based planning + value function guidance) with the same skill proposal mechanism
+                that
+                BOSS uses.</li>
+              <br>
+              <li><b>CIC</b>: (state of the art unsupervised RL) pre-trained on the same data and fine-tuned
+                for
+                500,000 environment
+                steps with unsupervised RL to discover interesting skills. </li>
+            </p>
+            <br>
+            <div class="content has-text-centered">
+              <!--  3 gif images place in one row -->
+              <div class="columns is-centered">
+                <div class="column">
+                  <img src="./static/images/CIC_eval_plunger.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <b style="color:black;font-size:20px;"> CIC </b>
+                  <p> Completes no tasks as its unsupervised skill learning objective is unable to truly learn
+                    meaningful skills. </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/SAYCAN_eval_plunger.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <b style="color:black;font-size:20px;"> SayCan </b>
+                  <p> Gets stuck while navigating; not even completing the first skill due to policy execution errors.
+                  </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/BOSS_eval_2_plunger.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <!--  input high light text -->
+                  <b style="color:black;font-size:20px;"> BOSS </b>
+                  <p> Completes 2/2 sub-tasks through what it learned from skill bootstrapping in this environment. </p>
+                </div>
+              </div>
+              <p style="color:black;font-size:20px;">
+                Task: "Put the plunger in the sink."
+              </p>
+
+
+              <br>
+              <br>
+              <div class="columns is-centered">
+                <div class="column">
+                  <img src="./static/images/CIC_eval_3_apple.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <b style="color:black;font-size:20px;"> CIC </b>
+                  <p> Completes 0 sub-tasks, generally learns more random behaviors that may get stuck navigating. </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/SAYCAN_eval_3_apple.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <b style="color:black;font-size:20px;"> SayCan </b>
+                  <p> Completes 0 sub-tasks, the policy is confused by the incorrect instruction produced by the LLM.
+                  </p>
+                </div>
+                <div class="column">
+                  <img src="./static/images/BOSS_eval_3_apple.gif" class="interpolation-image"
+                    alt="Interpolate start reference image.">
+                  </img>
+                  <!--  input high light text -->
+                  <b style="color:black;font-size:20px;"> BOSS </b>
+                  <p> Completes 3/6 sub-tasks---picks up the potato at the end instead of the apple. Overall, still
+                    better than the baselines. </p>
+                </div>
+              </div>
+              <p style="color:black;font-size:20px;">
+                Task: "Put cooked apple slice on a counter."
+              </p>
+
+            </div>
+          </div>
+
+          <br>
+
+          <br><br>
+
+          <div class="column">
+
+            <div class="content is-centered">
+              <h4 class="title is-5">Quantitative Results</h4>
+              <p style="color:black;font-size:18px;">
+                We show the cumulative returns and task success rates for zero-shot bootstrapped policies vs other
+                methods.
+              </p>
+            </div>
+            <div class="the columns is-centered">
+              <img src="./static/images/new_alfred_result.png" class="interpolation-image"
+                style="width:415px;height:300px;" alt="Interpolate start reference image.">
+              </img>
+            </div>
+            <div class="the columns is-centered">
+              <b style="color:black;font-size:20px;"> <br> </b>
+            </div>
+            <!-- <p> Completes no tasks as its unsupervised skill learning objective is unable to truly learn meaningful skills. </p> -->
+          </div>
+
+          <div class="column">
+            <br>
+            <br>
+            <div class="content has-text-justified">
+              <h4 class="title is-5">Result Analysis</h4>
+              <p style="color:black;font-size:18px;">
+                We plot the skill lengths of learned skills over time on the left. Skill bootstrapping is able to learn
+                meaningful, longer horizon skills over time. On the right, we see that the skill library also grows over
+                time.
+              </p>
+            </div>
+            <img src="./static/images/skill_dist.png" class="interpolation-image"
+              alt="Interpolate start reference image.">
+            </img>
+          </div>
+
+        </div>
+
+        <br>
+        <br>
+
+
+
+
+
+
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Concurrent Work. -->
+  <!-- <section class="section"></section> -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{
+    zhang2023bootstrap,
+    title={Bootstrap Your Own Skills: Learning to Solve New Tasks with Large Language Model Guidance},
+    author={Jesse Zhang and Jiahui Zhang and Karl Pertsch and Ziyi Liu and Xiang Ren and Minsuk Chang and Shao-Hua Sun and Joseph J Lim},
+    booktitle={7th Annual Conference on Robot Learning},
+    year={2023},
+    url={https://openreview.net/forum?id=a0mFRgadGO}
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <!--
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>-->
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                Website borrowed from <a rel="license" href="https://nerfies.github.io/">Nerfies</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+</body>
+
+</html>
