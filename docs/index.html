@@ -176,7 +176,7 @@
     <div class="container">
       <div class="is-centered has-text-centered">
         <video id="teaser_video" width=100% muted autoplay loop style="border-radius:10px;" margin="auto">
-          <source src="static/videos/BOSS_over_2x.mp4" type="video/mp4">
+          <source src="static/videos/BOSS_new_vid.mov">
         </video>
       </div>
     </div>
@@ -556,8 +556,8 @@
               </p>
             </div>
             <div class="the columns is-centered">
-              <img src="./static/images/new_alfred_result.png" class="interpolation-image"
-                style="width:415px;height:300px;" alt="Interpolate start reference image.">
+              <img src="./static/images/new_alfred_result.png" class="interpolation-image" 
+		 style="width:415px;height:300px;" alt="Interpolate start reference image.">
               </img>
             </div>
             <div class="the columns is-centered">
@@ -596,8 +596,56 @@
   </section>
 
 
+  <br>
+  <hr>
+
+  <br>
 
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Q & A<br><br>
+          </h2>
+
+
+          <div class="content has-text-justified">
+
+            <h4 class="title is-5">How is this different from 
+              <a href="https://say-can.github.io/">SayCan</a>?</h4>
+            <p>
+              The difference against SayCan and other similar LLM planning works is that they perform 
+              top-down planning of pre-trained/fixed policies (the policies can be learned or planning-based) 
+              directly in the target environment. BOSS, on the other hand, builds a skill library bottom-up 
+              tailored for the target environment and continually fine-tunes a learned agent on this skill library. 
+              This results in an agent which can better transition between skills and does not require an LLM planner 
+              at test-time to break down long-horizon tasks into primitive skill sequences for the agent to execute. </p>
+            <br>
+            <h4 class="title is-5">How is this different from 
+              <a href="https://clvrai.github.io/sprint/">SPRINT</a>?</h4>
+            
+            <p>
+              SPRINT focuses on pre-training policies for efficient adaptation given the intended target tasks. 
+              SPRINT uses an LLM to aggregate skills together with a higher-level task instruction, 
+              which we also use in BOSS. Meanwhile, BOSS is an algorithm that allows the agent to autonomously 
+              acquire new skills without knowing the intended target tasks in new environments. </p>
+            <br>
+            <h4 class="title is-5">What are the limitations of BOSS?</h4>
+            
+            <p>
+              We see two main limitations. The first is the need for environment resets between episodes, 
+              which we hope reset-free RL can help resolve in the future. 
+              The second is the requirement of data and sparse reward functions for the primitive skills 
+              which are used to compose all new learned skills. Data is difficult to collect and even sparse 
+              reward functions may be hard to acquire in the real world, 
+              so one way to allow BOSS to acquire even more skills would be to allow it to perform 
+              reward-free acquisition of new skills. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
