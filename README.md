@@ -4,7 +4,7 @@
 
 [[Project Website]](https://clvrai.github.io/boss/) [[Paper]](https://arxiv.org/abs/2310.10021) [[OpenReview]](https://openreview.net/forum?id=a0mFRgadGO)
 
-[Jesse Zhang](https://jesbu1.github.io/)<sup>1</sup>, [Jiahui Zhang](https://jiahui-3205.github.io/)<sup>1</sup>, [Karl Pertsch](https://kpertsch.github.io/)<sup>1</sup>, [Ziyi Liu](https://www.linkedin.com/in/ziyi-liu-318616186/)<sup>1</sup>, [Xiang Ren](https://shanzhenren.github.io/)<sup>1</sup>, [Minsuk Chang](https://minsukchang.com/)<sup>2</sup>, [Shao-Hua Sun](https://shaohua0116.github.io/)<sup>3</sup>, [Joseph J. Lim](https://clvrai.com/web_lim/)<sup>4</sup>
+[Jesse Zhang](https://jesbu1.github.io/)<sup>1</sup>, [Jiahui Zhang](https://jiahui-3205.github.io/)<sup>1</sup>, [Karl Pertsch](https://kpertsch.github.io/)<sup>1</sup>, [Ziyi Liu](https://taichi-pink.github.io/Ziyi-Liu/)<sup>1</sup>, [Xiang Ren](https://shanzhenren.github.io/)<sup>1</sup>, [Minsuk Chang](https://minsukchang.com/)<sup>2</sup>, [Shao-Hua Sun](https://shaohua0116.github.io/)<sup>3</sup>, [Joseph J. Lim](https://clvrai.com/web_lim/)<sup>4</sup>
 
 <sup>1</sup>University of Southern California 
 <sup>2</sup>Google AI
