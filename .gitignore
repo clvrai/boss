@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# mac ds store
+*.DS_Store
+
 # Distribution / packaging
 .Python
 build/
@@ -122,9 +125,9 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
+#env/
 venv/
-ENV/
+#ENV/
 env.bak/
 venv.bak/
 
